@@ -11,9 +11,9 @@ namespace SHA256_Algorithm
     {
         public string Sha256Enc(string Data)
         {
-            using(SHA256 sha256Hash = SHA256.Create())
+            using(var sha256provider = new SHA256CryptoServiceProvider()) // SHA256 sha256Hash = SHA256.Create()
             {
-                byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(Data));
+                byte[] bytes = sha256provider.ComputeHash(Encoding.UTF8.GetBytes(Data));
                 StringBuilder builder = new StringBuilder();
                 for(int i=0; i<bytes.Length; i++)
                 {
@@ -25,3 +25,4 @@ namespace SHA256_Algorithm
 
     }
 }
+/*SHA256 algoritmasının uygulanabilmesi için SHA256CryptoServiceProvider sınıfından yeni bir nesne üretmek ve bu sınıfın ComputeHash metodunu kullanmak gerekiyor.*/

@@ -58,14 +58,14 @@ namespace SHA256_Algorithm
             // 
             this.textBox1.Location = new System.Drawing.Point(199, 47);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(489, 22);
+            this.textBox1.Size = new System.Drawing.Size(243, 22);
             this.textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(199, 132);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(489, 22);
+            this.textBox2.Size = new System.Drawing.Size(689, 22);
             this.textBox2.TabIndex = 3;
             // 
             // button1
@@ -82,7 +82,7 @@ namespace SHA256_Algorithm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 219);
+            this.ClientSize = new System.Drawing.Size(1202, 219);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
